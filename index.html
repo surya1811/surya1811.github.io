@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>
+index
+</title>
+<link rel="stylesheet" type="text/css" href="qcm.css"/>
+<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script> 
+  $(document).ready(function()
+{
+	$("#lbtn").click(function()
+	{
+	$(".login").show();
+	$(".register").hide();
+	});
+ });	
+</script>
+
+<script> 
+  $(document).ready(function()
+{
+	$("#rbtn").click(function()
+	{
+	$(".register").show();
+	$(".login").hide();
+	});
+ });	
+</script>
+
+<script> 
+  $(document).ready(function()
+{
+	$("#rlink").click(function()
+	{
+	$(".register").show();
+	$(".login").hide();
+	});
+ });	
+</script>
+
+
+<script> 
+  $(document).ready(function()
+{
+	$("#llink").click(function()
+	{
+	$(".login").show();
+	$(".register").hide();
+	});
+ });	
+</script>
+
+</head>
+<body>
+	<div class="row">
+	<div class="column">
+			<div class="content">
+			
+			<img src="logo.png" alt="logo" height="300px" style="margin-left:40px;width:300px">
+			<h1 style="text-align:center;font-size:35px;font-family: sans-serif">Welcome To our Website</h1>
+			<p  style="text-align:center;color:#fff858;font-size:27px">Here this website is ready  to develop ur skills 
+			<br>
+			Already a customer..... Login To develop Ur Skills<br>
+			New to this website,Register to improve ur skills
+			</p>
+			</div>
+		</div>	
+	
+	<div class="column">
+	<div class="content" style="font-family:'comfortaa';float:right;margin-right:20px;width:70%">
+		<div class="container">
+			<header>
+			<h1>
+			Get Into Website
+			</h1>
+			</header>
+			<button type=button id="lbtn" class="btn">Login</button>
+			<button type="button" id="rbtn" class="btn">Register</button>
+			<div class="login"  style="margin-left:20px;display:none;">
+			<form name="Contact Form" action="action.page.php" >
+			<label for="name" style="font-size:35px">User name:<br>
+			<input type="text" id="textbox" name="username" " maxlength="35"  autofocus required >
+			<br></label>
+			<label for="password" style="font-size:35px">Password:<br>
+			<input type="password" name="urEmail" id="textbox"  maxlength="35" required>
+			<br><br></label>
+			<label for="submit">
+			<input type="submit" value="submit" id="submit"  class="btn1">
+			</label>
+			<p style="text-align:center;font-size:25px;">not a member yet?</p>
+			<a href="#" class="btn1" id="rlink">Registerhere</a>
+			</form>
+			</div>
+			<div style="margin-left:20px;font-size:27px;display:none" class="register">	
+			<form name="Registration Form" action="action.php" >
+			<label for="name">Enter your name:<br>
+			<input type="text" id="textbox" name="urname" " maxlength="35"   autofocus required >
+			<br></label>
+			<label for="email">Enter your Email:<br>
+			<input type="email" name="urEmail" id="textbox"  maxlength="35" placeholder="########@*****.com" required>
+			<br></label>
+			<label for="password">Password:<br>
+			<input type="password" name="passwword" id="textbox"  maxlength="35" required>
+			<br></label>
+			<label for="re-enter password">Re-enter Password:<br>
+			<input type="password" name="reenter password" id="textbox"  maxlength="35" required>
+			<br></label>
+			<label for="Mobile Number">Contact Number:
+			<input type="number" name=mobile number" id="textbox"  maxlength="12"   required>
+			<br></label>
+			<label for="submit">
+			<input type="button" value="Verify" id="verify"  class="btn1">
+			<br></label>
+			<a href="#" class="btn1" id="llink" style="font-size:24px;">Already member</a>
+			</form>		
+			</div>
+			</div>
+		</div>
+	</div>
+		
+		</div>
+</body>
+</html>
+			
